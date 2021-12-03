@@ -1,4 +1,5 @@
 import {data} from "./data1.mjs"
+import { test } from "./utils.mjs"
 const example = [
 199,
 200,
@@ -49,7 +50,3 @@ function findLargerMeasurements(data){
 
 test(threeMeasurements(data),5)
 
-function test(result,expect){
-    console.log('Result',result,'expect',expect,result===expect)
-    console.assert(result===expect)
-}
